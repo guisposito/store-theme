@@ -9,11 +9,13 @@
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
+      "rich-text",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
     ]
   },
+
 
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
@@ -99,6 +101,13 @@
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
+    }
+  },
+  
+  "rich-text": {
+    "props": {
+      "text": "*Hello World*",
+      "textPosition": "CENTER"
     }
   }
 }
