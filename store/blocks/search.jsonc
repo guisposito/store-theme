@@ -59,12 +59,12 @@
       "search-not-found-layout"
     ]
   },
-
+  /*ALTERAÇÕES GUI*/
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
-      "rich-text",
+      "flex-layout.row#catgui",
       "flex-layout.row#result"
     ],
     "props": {
@@ -73,6 +73,56 @@
       "defaultGalleryLayout": "grid"
     }
   },
+  "flex-layout.row#catgui": {
+    "children": [
+      "flex-layout.col#leftxt",
+      "flex-layout.col#righttxt"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "guiteste",
+      "border":"all"
+    }
+  },
+  "flex-layout.col#leftxt": {
+    "children": [
+      "rich-text#first"
+    ],
+    "props": {
+      "blockClass": "cat-gui-left",
+      "border": "all"
+    }
+  },
+  "flex-layout.col#righttxt": {
+    "children": [
+      "rich-text#catgui"
+    ],
+    "props": {
+      "blockClass": "cat-gui-right",
+      "border": "all"
+    }
+  },
+
+  "rich-text#first": {
+    "title": "Frist Text",
+    "props": {
+      "text": "*Meu novo bloco*",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#catgui": {
+    "title": "Meu H1",
+    "props": {
+      "text": "Isso era pra ser um H1",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-5",
+      "blockClass": "cat-gui-h1"
+    }
+  },
+  /*endblock gui*/
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search"],
     "props": {
@@ -83,12 +133,7 @@
   "flex-layout.row#searchtitle": {
     "children": ["search-title.v2"]
   },
-  "rich-text": {
-    "props": {
-      "text": "*Hello World*",
-      "textPosition": "CENTER"
-    }
-  },
+ 
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
     "props": {
