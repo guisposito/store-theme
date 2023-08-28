@@ -1,6 +1,7 @@
 {
   "store.home": {
     "blocks": [
+      "image#test-gui",
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
@@ -15,7 +16,12 @@
       "newsletter"
     ]
   },
-
+  /*BLOCO DE EDICAO GUI*/
+  "image#test-gui": {
+    "props": {
+      "src":"assets/bg.avif"
+    }
+  },
 
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
