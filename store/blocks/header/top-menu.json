@@ -1,9 +1,6 @@
 {
   "vtex.menu@2.x:menu#websites": {
-    "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
-    ]
+    "children": ["menu-item#shop", "menu-item#about-us", "menu-item#pagina-gui"]
   },
   "menu-item#shop": {
     "props": {
@@ -21,9 +18,7 @@
     }
   },
   "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
-    ]
+    "children": ["menu-item#vtex-website"]
   },
   "menu-item#vtex-website": {
     "props": {
@@ -37,6 +32,21 @@
         "noFollow": false,
         "tagTitle": "visit vtex.com",
         "text": "visit vtex.com"
+      }
+    }
+  },
+  "menu-item#pagina-gui": {
+    "props": {
+      "id": "menu-item-pagina-gui",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/custom01",
+        "noFollow": false,
+        "tagTitle": "pagina01 visite",
+        "text": "Página 01"
       }
     }
   }

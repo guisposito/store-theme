@@ -1,0 +1,35 @@
+{
+    "store.custom#custom01": {
+        "children": [
+            "image#test-gui",
+            "rich-text#text-gui",
+            "category-menu#cat-gui"
+        ]
+    },
+
+    "image#test-gui": {
+        "title": "Minha imagem",
+        "props": {
+          "src": "assets/bg.avif"
+        }
+    },
+    "rich-text#text-gui": {
+        "title": "Meu h1",
+        "props": {
+            "blockClass": "titulo",
+            "text": "Meu texto"
+        }
+    },
+    "category-menu#cat-gui": {
+        "props": {
+          "showAllDepartments": true,
+          "showSubcategories": true,
+          "menuDisposition": "center",
+          "departments": [],
+          "sortSubcategories": "name",
+          "blockClass": "menuteste"
+        },
+        "title": "Menu teste"
+      }
+}
+

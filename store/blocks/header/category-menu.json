@@ -6,7 +6,9 @@
     "children": [
       "menu-item#category-apparel",
       "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#more",
+      "menu-item#contact-us",
+      "menu-item#item-gui"
     ]
   },
   "menu-item#category-apparel": {
@@ -200,5 +202,22 @@
         "text": "Contact Us"
       }
     }
+  },
+  "menu-item#item-gui": {
+    "props": {
+      "id": "menu-item-pagina-gui",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/roupas",
+        "noFollow": false,
+        "tagTitle": "Roupas",
+        "text": "Roupas"
+      }
+    }
   }
+
+
 }
